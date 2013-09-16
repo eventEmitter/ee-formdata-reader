@@ -1,0 +1,32 @@
+{
+      "name"                        : "ee-formdata-reader"
+    , "description"                 : "reads formdata from a request"
+    , "version"                     : "0.1.0"
+    , "homepage"                    : "https://github.com/eventEmitter/ee-formdata-reader"
+    , "author"                      : "Michael van der Weg <michael@eventemitter.com> (http://eventemitter.com/)" 
+    , "licence"                     : "MIT"
+    , "os"                          : "linux"
+    , "repository": {
+          "url"                     : "https://github.com/eventEmitter/ee-formdata-reader.git"
+        , "type"                    : "git"
+    }
+    , "engines": {
+        "node"                      : ">=0.10.7"
+    }
+    , "bugs": {
+        "url"                       : "https://github.com/eventEmitter/ee-formdata-reader/issues"
+    }
+    , "dependencies": {
+          "ee-class"                : ">=0.1.3"
+        , "ee-log"                  : "*"
+        , "ee-error"                : "*"
+        , "ee-event-emitter"        : "*"
+        , "ee-types"                : "*"
+        , "ee-machine-id"           : "*"
+        , "ee-mime-decoder"         : "*"
+        , "ee-stream-url-decoder"   : "*"
+        , "ee-stream-collector"     : "*"
+    }
+    , "devDependencies": {}
+    , "optionalDependencies": {}
+}
