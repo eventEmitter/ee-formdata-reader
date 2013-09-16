@@ -9,7 +9,7 @@ formdata parser
 ## usage
 
 	
-	var reader = new FormdataReader( { request: request } );
+	var reader = new FormdataReader( request );
 
 	reader.on( "end", function(){
 		log( reader.getForm() );

@@ -32,7 +32,7 @@
 	} );
 
 
-	var reader = new FormdataReader( { request: new Request() } );
+	var reader = new FormdataReader( new Request() );
 
 	reader.on( "end", function(){
 		log( reader.getForm() );
