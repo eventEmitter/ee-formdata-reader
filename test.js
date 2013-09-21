@@ -22,7 +22,7 @@
 
 
 		, getHeader: function(){
-			return "multipart/form-data";
+			return "multipart/form-data; boundary=AaB03x";
 		}
 
 
