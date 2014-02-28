@@ -1,11 +1,11 @@
 {
       "name"                        : "ee-formdata-reader"
-    , "description"                 : "reads formdata from a request"
-    , "version"                     : "0.1.4"
+    , "description"                 : "reads formdata from requests"
+    , "version"                     : "0.1.5"
     , "homepage"                    : "https://github.com/eventEmitter/ee-formdata-reader"
     , "author"                      : "Michael van der Weg <michael@eventemitter.com> (http://eventemitter.com/)" 
     , "licence"                     : "MIT"
-    , "os"                          : "linux"
+    , "os"                          : "!win"
     , "repository": {
           "url"                     : "https://github.com/eventEmitter/ee-formdata-reader.git"
         , "type"                    : "git"
@@ -26,7 +26,15 @@
         , "ee-mime-decoder"         : "*"
         , "ee-stream-url-decoder"   : "*"
         , "ee-stream-collector"     : "*"
+    } 
+    , "devDependencies": {
+          "mocha"                   : "*"
+        , "ee-travis"               : "*"
+        , "ee-project"              : "*"
     }
-    , "devDependencies": {}
     , "optionalDependencies": {}
+    , "keywords"                    : ["mime", "mime-message", "multipart/form-data"]
+    , "scripts": {
+        "test"                      : "./node_modules/mocha/bin/mocha --reporter spec"
+    }
 }
