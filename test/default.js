@@ -80,4 +80,17 @@
 				done();
 			});
 		});
+
+
+		it('Should be able to decode post message 3', function(done){
+			var reader = new FormdataReader({
+				request: createRequest('post3.mime', 'multipart/form-data; boundary=--------------------------673022500147059248960166')
+			});
+
+			reader.on('end', function(){
+				var form = reader.getForm();
+				assert.equal('fb93818d01553e9fead6873b780580aefb93818d01553e9fead6873b780580aec239dddc9c7a19eef9af0052da451a8ac239dddc9c7a19eef9af0052da451a8a', calculateMessageHash(form), 'message hash is different!')
+				done();
+			});
+		});
 	});

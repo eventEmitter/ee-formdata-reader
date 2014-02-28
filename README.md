@@ -27,7 +27,7 @@ simple but powerful formdata parser. parses mutipart & urlencoded data from requ
 		, cacheId: 'some machine id' 		// if files are stored on the filesystem they will contain a 
 											// machine identifier in their filename so one can use shared
 											// storage solutions between mutliple machines. defaults to 
-											// «ee-formdata-reader».
+											// an identifier provided by the «ee-machine-id» package
 	});
 
 	// when the request has ended and all data has been received, decoded and cached
