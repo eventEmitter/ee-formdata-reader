@@ -60,7 +60,7 @@
 
 
 	describe('The Formdata Reader', function(){
-		it('Should be able to decode post message 1', function(done){
+		it('Should be able to decode multipart post message 1', function(done){
 			var reader = new FormdataReader(createRequest('post1.mime', 'multipart/form-data; boundary=AaB03x'));
 
 			reader.on('end', function(){
@@ -71,7 +71,7 @@
 		});
 
 
-		it('Should be able to decode post message 2', function(done){
+		it('Should be able to decode multipart post message 2', function(done){
 			var reader = new FormdataReader(createRequest('post2.mime', 'multipart/mixed; boundary="----------------------------722570873451616639732247"'));
 
 			reader.on('end', function(){
@@ -82,7 +82,7 @@
 		});
 
 
-		it('Should be able to decode post message 3', function(done){
+		it('Should be able to decode multipart post message 3', function(done){
 			var reader = new FormdataReader({
 				request: createRequest('post3.mime', 'multipart/form-data; boundary=--------------------------673022500147059248960166')
 			});
