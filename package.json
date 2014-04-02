@@ -1,9 +1,9 @@
 {
       "name"                        : "ee-formdata-reader"
     , "description"                 : "reads formdata from requests"
-    , "version"                     : "0.1.12"
+    , "version"                     : "0.1.13"
     , "homepage"                    : "https://github.com/eventEmitter/ee-formdata-reader"
-    , "author"                      : "Michael van der Weg <michael@eventemitter.com> (http://eventemitter.com/)" 
+    , "author"                      : "Michael van der Weg <michael@eventemitter.com> (http://eventemitter.com/)"
     , "licence"                     : "MIT"
     , "os"                          : "!win"
     , "repository": {
@@ -25,7 +25,7 @@
         , "ee-mime-decoder"         : "0.1.x"
         , "ee-stream-url-decoder"   : "0.1.x"
         , "ee-stream-collector"     : "0.1.x"
-    } 
+    }
     , "devDependencies": {
           "mocha"                   : "1.17.x"
         , "ee-travis"               : "0.1.x"
