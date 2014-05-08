@@ -45,6 +45,7 @@
 	var calculateMessageHash = function(message) {
 		var hash = '';
 
+
 		Object.keys(message).forEach(function(key){// log(message[key]);
 			if (Array.isArray(message[key])){
 				message[key].forEach(function(subMessage){
@@ -90,6 +91,17 @@
 			reader.on('end', function(){
 				var form = reader.getForm();
 				assert.equal('fb93818d01553e9fead6873b780580aefb93818d01553e9fead6873b780580aec239dddc9c7a19eef9af0052da451a8ac239dddc9c7a19eef9af0052da451a8a', calculateMessageHash(form), 'message hash is different!')
+				done();
+			});
+		});
+
+		it('Should be able to decode an empty multipart post', function(done){
+			var reader = new FormdataReader({
+				request: createRequest('post4.mime', 'multipart/form-data;')
+			});
+
+			reader.on('end', function(){
+				assert.equal(JSON.stringify({}), JSON.stringify(reader.getForm()), 'message hash is different!')
 				done();
 			});
 		});
