@@ -105,4 +105,16 @@
 				done();
 			});
 		});
+
+
+		it('Should be able to decode an json message', function(done){
+			var reader = new FormdataReader({
+				request: createRequest('post5.json', 'application/json')
+			});
+
+			reader.on('end', function() {
+				assert.equal('{"a":[1,2,3,4,5,"f"],"rr":"hui"}', JSON.stringify(reader.getForm()), 'message hash is different!')
+				done();
+			});
+		});
 	});
