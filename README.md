@@ -1,5 +1,7 @@
 # ee-formdata-reader
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/eventEmitter/ee-formdata-reader.svg)](https://greenkeeper.io/)
+
 simple but powerful formdata parser. parses mutipart & urlencoded data from request. caches files in memory or on the disk.
 
 ## installation
