@@ -17,17 +17,17 @@
         "url"                       : "https://github.com/eventEmitter/ee-formdata-reader/issues"
     }
     , "dependencies": {
-          "ee-class"                : "0.3.x"
-        , "ee-log"                  : "0.2.x"
+          "ee-class"                : "~1.4.0"
+        , "ee-log"                  : "~2.0.2"
         , "ee-error"                : "0.1.x"
-        , "ee-event-emitter"        : "0.1.x"
-        , "ee-types"                : "0.1.x"
+        , "ee-event-emitter"        : "~1.0.1"
+        , "ee-types"                : "~2.1.2"
         , "ee-mime-decoder"         : "0.1.x"
         , "ee-stream-url-decoder"   : "0.1.x"
         , "ee-stream-collector"     : "0.1.x"
     }
     , "devDependencies": {
-          "mocha"                   : "1.17.x"
+          "mocha"                   : "~3.3.0"
         , "ee-travis"               : "0.1.x"
         , "ee-project"              : "0.2.x"
     }
